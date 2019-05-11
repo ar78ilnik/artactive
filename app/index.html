@@ -75,7 +75,28 @@
                             <li class="services__item">изготовление цветопробы</li>
                             <li class="services__item">доставка баннеров</li>
                         </ul>
-                        <div class="slider"></div>
+                        <div class="slider">
+                            <div class="item">
+                                <img src="img/slider-foto/item1.jpg" alt="first item" width="290" height="218">
+                            </div>
+                            <div class="item">
+                                <img src="img/slider-foto/item2.jpg" alt="first item" width="290" height="218">
+                            </div>
+                            <a class="prev" onclick="minusSlide()">
+                                <svg width="92" height="14">
+                                    <line x1="0" y1="7" x2="92" y2="7" style="stroke: #883eca; stroke-width: 3px;" />
+                                    <line x1="0" y1="7" x2="15" y2="0" style="stroke: #883eca; stroke-width: 3px;" />
+                                    <line x1="0" y1="7" x2="15" y2="14" style="stroke: #883eca; stroke-width: 3px;" />
+                                </svg>
+                            </a>
+                            <a class="next" onclick="plusSlide()">
+                                <svg width="92" height="14">
+                                    <line x1="0" y1="7" x2="92" y2="7" style="stroke: #883eca; stroke-width: 3px;" />
+                                    <line x1="92" y1="7" x2="77" y2="0" style="stroke: #883eca; stroke-width: 3px;" />
+                                    <line x1="92" y1="7" x2="77" y2="14" style="stroke: #883eca; stroke-width: 3px;" />
+                                </svg>
+                            </a>
+                        </div>
                         <form action="script.php" class="form">
                             <span class="form__question">Есть вопросы?</span>
                             <span class="form__push">Закажите консультацию</span>
@@ -86,7 +107,7 @@
                         <div class="page-body__box">
                             <h3 class="page-body__h3">Широкоформатная печать для вашего интерьера</h3>
                             <p class="page-body__paragraph">Печатаем широкоформатные фотографии на глянцевой и матовой фотобумаге разной плотности, на глянцевом и матовом холсте или на самоклеющейся пленке. также можем предложить обработку и редактирование ваших фотографий силами наших дизайнеров: композиции, фотоколлаж, ретушь, различные эффекты</p>
-                            <a href="#" class="button">ОТСАВИТЬ ЗАЯВКУ</a>
+                            <a href="#" class="button button_home">ОТСАВИТЬ ЗАЯВКУ</a>
                         </div>
                         <div class="page-body__box">
                             <h3 class="page-body__h3">Оперативная полиграфия - от визитки до баннера</h3>
@@ -165,5 +186,6 @@
         <span class="footer__sergey">Designed by Sergey Strogiy</span>
     </footer>
 </body>
+<script src="js/slider.js"></script>
 
 </html>
