@@ -30,3 +30,26 @@
         line-height: 20px;
     }
 }
+
+@media (min-width: 780px) {
+    .print {
+        background: url(../img/building-tablet.png), radial-gradient(circle at 50% 20%, rgba(255, 255, 255, 0.5), #8d3dd9 20%) #8d3dd9;
+        background-repeat: no-repeat;
+        background-position: -38% 0;
+
+        &__size {
+            width: 282px;
+            height: 145px;
+            margin: 0;
+            font-size: 45px;
+            line-height: 50px;
+            letter-spacing: 2px;
+            margin: 38px auto 41px auto;
+        }
+
+        &__present {
+            font-size: 24px;
+            width: 282px;
+        }
+    }
+}
