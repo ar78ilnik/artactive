@@ -8,6 +8,12 @@
         align-items: center;
         height: 60px;
     }
+
+    &_print {
+        background: url("../img/building.png"), radial-gradient(circle at 50% 20%, rgba(255, 255, 255, 0.5), #8d3dd9 20%) #8d3dd9;
+        background-repeat: no-repeat;
+        background-position: 50% -12px;
+    }
 }
 
 @media (min-width: 780px) {
@@ -16,13 +22,25 @@
         margin: 0 auto;
 
         &_print {
-            padding-left: 467px;
+            display: flex;
+            justify-content: flex-end;
+            background: url(../img/building-tablet.png), radial-gradient(circle at 50% 20%, rgba(255, 255, 255, 0.5), #8d3dd9 20%) #8d3dd9;
+            background-repeat: no-repeat;
+            background-position: -120px 0;
         }
     }
 }
 
 @media (min-width: 1920px) {
     .wrapper {
-        width: 1170px;
+        width: 1140px;
+
+        &_header {
+            display: flex;
+        }
+    }
+
+    .wrapper svg {
+        display: none;
     }
 }

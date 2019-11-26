@@ -1,8 +1,29 @@
 .header {
-  background-color: #8d3dd9;
-  width: 100%;
+    background-color: #8d3dd9;
+    width: 100%;
+    height: auto;
 
-  &__container-menu {
-    display: none;
-  }
+    &__container-menu {
+        display: none;
+    }
+}
+
+@media (min-width: 1920px) {
+    .header {
+        &__container-menu {
+            width: 900px;
+            height: 165px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__tel {
+            font-size: 16px;
+            letter-spacing: 1px;
+            color: #ffffff;
+            font-family: "Open Sans Bold";
+            font-weight: 700;
+        }
+    }
 }
