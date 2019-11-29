@@ -1,32 +1,55 @@
 .page-body {
-    &__h2 {
-        font-family: "Muller Bold";
-        font-size: 30px;
-        color: #7f38bd;
-        margin-top: 31px;
-        padding-bottom: 22px;
-    }
+  &__h2 {
+    font-family: "Muller Bold";
+    font-size: 30px;
+    color: #7f38bd;
+    font-weight: 700;
+    margin-top: 37px;
+    padding-bottom: 22px;
+  }
 
-    &__item:nth-child(1) {
-        padding-bottom: 790px;
-        background-image: url("../img/spectr.png");
-        background-repeat: no-repeat;
-        background-position: 50% 89%;
+  &__item:nth-child(1) {
+    padding-bottom: 790px;
+    background-image: url("../img/spectr.png");
+    background-repeat: no-repeat;
+    background-position: 50% 90%;
+  }
+
+  &__h3 {
+    font-family: "Muller Medium";
+    font-size: 24px;
+    color: #383d52;
+    font-weight: 500;
+    line-height: 30px;
+  }
+
+  &__paragraph {
+    font-family: "Open Sans Regular";
+    font-size: 14px;
+    line-height: 24px;
+    color: #5e606a;
+    margin-top: 26px;
+  }
+}
+
+@media (min-width: 780px) {
+  .page-body {
+    &__h2 {
+      margin-top: 50px;
+      margin-bottom: 30px;
     }
 
     &__h3 {
-        font-family: "Muller Medium";
-        font-size: 24px;
-        color: #383d52;
-        font-weight: 500;
-        line-height: 30px;
+      font-size: 30px;
+      font-family: "Muller Bold";
+      letter-spacing: 1px;
     }
 
-    &__paragraph {
-        font-family: "Open Sans Regular";
-        font-size: 14px;
-        line-height: 24px;
-        color: #5e606a;
-        margin-top: 29px;
+    &__item:nth-child(1) {
+      padding-bottom: 790px;
+      background-image: url("../img/spectr-tablet.png");
+      background-repeat: no-repeat;
+      background-position: 50% 61%;
     }
+  }
 }

@@ -1,47 +1,53 @@
 .wrapper {
-    width: 290px;
-    margin: 0 auto;
+  width: 290px;
+  margin: 0 auto;
 
-    &_header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 60px;
-    }
+  &_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+  }
 
-    &_print {
-        background: url("../img/building.png"), radial-gradient(circle at 50% 20%, rgba(255, 255, 255, 0.5), #8d3dd9 20%) #8d3dd9;
-        background-repeat: no-repeat;
-        background-position: 50% -12px;
-    }
+  &_print {
+    background: url("../img/building.png"), radial-gradient(circle at 50% 20%, rgba(255, 255, 255, 0.5), #8d3dd9 20%) #8d3dd9;
+    background-repeat: no-repeat;
+    background-position: -47px -12px;
+  }
 }
 
 @media (min-width: 780px) {
-    .wrapper {
-        width: 720px;
-        margin: 0 auto;
+  .wrapper {
+    width: 720px;
+    margin: 0 auto;
 
-        &_print {
-            display: flex;
-            justify-content: flex-end;
-            background: url(../img/building-tablet.png), radial-gradient(circle at 50% 20%, rgba(255, 255, 255, 0.5), #8d3dd9 20%) #8d3dd9;
-            background-repeat: no-repeat;
-            background-position: -120px 0;
-        }
+    &_print {
+      display: flex;
+      justify-content: flex-end;
+      background: url(../img/building-tablet.png);
+      background-repeat: no-repeat;
+      background-position: -120px 0;
     }
+  }
 }
 
 @media (min-width: 1920px) {
-    .wrapper {
-        width: 1140px;
+  .wrapper {
+    width: 1140px;
 
-        &_header {
-            display: flex;
-            height: 155px;
-        }
+    &_header {
+      display: flex;
+      height: 155px;
     }
 
-    .wrapper svg {
-        display: none;
+    &_print {
+      background: url(../img/building-desk.png);
+      background-repeat: no-repeat;
+      background-position: -110px 27px;
     }
+  }
+
+  .wrapper svg {
+    display: none;
+  }
 }
